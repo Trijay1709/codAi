@@ -1,5 +1,5 @@
 import os
-from config import MAX_CHARS
+from codai.config import MAX_CHARS
 
 def get_file_contents(working_directory, file_path):
 

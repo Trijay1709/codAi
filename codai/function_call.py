@@ -2,15 +2,15 @@
 import os
 
 from google.genai import types
-from functions.get_files_info import get_files_info
-from functions.get_file_contents import get_file_contents
-from functions.write_file import write_file 
-from functions.run_python_file import run_python_file
-
-working_directory = "demo_calc_app"
+from .functions.get_files_info import get_files_info
+from .functions.get_file_contents import get_file_contents
+from .functions.write_file import write_file 
+from .functions.run_python_file import run_python_file
 
 
-def call_function(function_call,verbose=False):
+
+
+def call_function(function_call,working_directory,verbose=False):
     if verbose:
         print(f"Calling function: {function_call.name} with arguments: {function_call.args}")
     else :

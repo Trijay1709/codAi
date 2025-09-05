@@ -1,5 +1,5 @@
 from google.genai import types
-from function_schemas import available_functions
+from .function_schemas import available_functions
    
 MAX_CHARS = 10000
 system_prompt = """You are a helpful AI coding agent. 
